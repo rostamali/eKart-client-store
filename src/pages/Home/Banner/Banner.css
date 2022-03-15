@@ -1,0 +1,129 @@
+#banner .swiper-slide{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner__text{
+    height: 75vh;
+    display: flex;
+}
+.banner__text .row {
+    align-items: center;
+    height: 100%;
+}
+.banner__subtitle{
+    color: #7d879c;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.banner__title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.banner__bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* brand btn */
+.btn__primary{
+    padding: 10px 40px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn__brand{
+    color: #fff;
+    border: 2px solid #ff4c3b;
+    background-image: linear-gradient(30deg, #ff4c3b 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.btn__brand:hover {
+    background-position: 100%;
+    color: #ff4c3b;
+    background-color: transparent;
+}
+
+/* banner arrow */
+div#banner {
+    position: relative;
+}
+div#banner button.swiper__arrow {
+    position: absolute;
+    top: 46%;
+    z-index: 40;
+    background: #FFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all .5s ease;
+    opacity: 0;
+    font-size: 15px;
+}
+.arrow__prev{
+    left: 0;
+}
+.arrow__next{
+    right: 0;
+}
+
+div#banner:hover .arrow__prev{
+    opacity: 1;
+    left: 100px;
+    transform: scale(1.6);
+}
+div#banner:hover .arrow__next{
+    opacity: 1;
+    right: 100px;
+    transform: scale(1.6);
+}
+
+
+/* ============ media query =============== */
+@media only screen and (max-width: 1399px){
+    .banner__text .banner__title{
+        font-size: 40px;
+        margin: 25px 0;
+    }
+}
+@media only screen and (max-width: 1299px){
+    .banner__text .banner__title{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .banner__text .banner__title{
+        font-size: 30px;
+    }
+    .col-lg-6.col-12.banner__hide {
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px){
+    .banner__text {
+        text-align: center;
+    }
+    .banner__text .banner__title{
+        font-size: 28px;
+    }
+    .banner__text{
+        height: 60vh;
+        display: flex;
+    }
+}

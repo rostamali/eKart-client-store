@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+/* ================== Google Font ================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ================== General Style ================== */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+body,
+html{
+    overflow-x: hidden;
+}
+p,h1,h2,h3,h4,h5,h6, ul, li{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.text__muted{
+    color: #7d879c;
+    font-size: 14px;
+    font-weight: 400;
+}
+.divider{
+    border-bottom: 1px solid #6d6b6b;
+    margin: 50px 0 30px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li{
+    list-style: none;
+}
+/* ================== Price text ================== */
+.product__box--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sale__price{
+    color: #ff4c3b;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 0.5rem;
+}
+.regular__price{
+    font-size: 14px;
+    font-weight: 600;
+    color: #7d879c;
+}
+/* ================== Usabale css ================== */
+button.btn__plus,
+button.btn__minus {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: transparent;
+}
+span.cart__qty {
+    display: flex;
+    height: 30px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.quantity__input--group {
+    display: flex;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add__cart--btn{
+    padding: 8px 40px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #ff4c3b;
+    background-image: linear-gradient(30deg, #ff4c3b 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+
+    margin-top: 20px;
+}
+.add__cart--btn:hover{
+    background-position: 100%;
+    color: #000;
+    background-color: transparent;
+}
+button.close__btn {
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff4c3b;
+    color: #FFF;
+}
+.btn__end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/* ================== Toast Color ================== */
+.ekart__toast .Toastify__toast-theme--light {
+    background: #ff4c3b;
+    color: #FFF;
+}
+.ekart__toast .Toastify__close-button--light {
+    color: #FFF;
+    opacity: 1;
+}
+.ekart__toast .Toastify__toast .Toastify__progress-bar.Toastify__progress-bar--animated.Toastify__progress-bar-theme--light.Toastify__progress-bar--default{
+    background: #ffffffb3;
+}
+/* ================== Pagination ================== */
+.pagination__wrapper{
+    padding-top: 40px;
+}
+a.pageLink {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin: 0 5px;
+}
+li.pageItem.activePage a.pageLink{
+    background: #ff4c3b;
+    color: #FFF;
+    border: 1px solid #ff4c3b;
+}
+ul.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.nextPageLink,
+a.previousPageLink {
+    height: 40px;
+    background: #FFF;
+    padding: 10px 10px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+}
+a.nextPageLink{
+    border-right: 6px solid #ff4c3b;
+}
+a.previousPageLink{
+    border-left: 6px solid #ff4c3b;
+}
+a.previousPageLink span,
+a.nextPageLink span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disabled__page a.previousPageLink{
+    border-left: 6px solid #0f3460;
+    background: #dae1e7;
+}
+.disabled__page a.nextPageLink{
+    border-left: 6px solid #0f3460;
+    background: #dae1e7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+/* ================== Sweet Alert ================== */
+button.swal2-confirm.alert__confirm--btn.swal2-styled.swal2-default-outline,
+button.swal2-confirm.swal2-styled.swal2-default-outline {
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    box-shadow: 0 0 0 3px transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.swal2-cancel.alert__cancel--btn.swal2-styled {
+    border-radius: 0;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 0 0 3px transparent;
 }
+/* ================== Google Font ================== */
+/* ================== Google Font ================== */
+/* ================== Google Font ================== */
+/* ================== Google Font ================== */
+/* ================== Google Font ================== */

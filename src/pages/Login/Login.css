@@ -1,0 +1,67 @@
+#login{
+    background-color: #f9f9f9;
+    padding: 60px 0 30px 0;
+}
+.auth__form .form__full .form-control {
+    height: 45px;
+    border-radius: 0;
+}
+.auth__form .form__full{
+    margin-bottom: 15px;
+}
+.auth__form .form__full label{
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.auth__form {
+    width: 40%;
+    margin: auto;
+}
+.form__link{
+    text-align: center;
+    margin-top: 30px;
+}
+.form__link a:link,
+.form__link a:visited{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ff4c3b;
+    display: inline-block;
+}
+
+.form__bottom .btn__brand {
+    background-image: linear-gradient(30deg, #ff4c3b 60%, transparent 40%);
+}
+.form__bottom .btn__brand:hover {
+    background-position: 160%;
+}
+
+/* ======= media query ======= */
+@media only screen and (max-width: 1199px){
+    .auth__form {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 991px){
+    .auth__form {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .auth__form {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .auth__form {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .auth__form {
+        width: 95%;
+    }
+}

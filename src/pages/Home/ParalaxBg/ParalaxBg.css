@@ -1,0 +1,42 @@
+#paralax{
+    background-color: #f9f9f9;
+}
+.paralax__bg{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    padding: 50px 40px;
+}
+.paralax__text .banner__subtitle{
+    color: #ff4c3b;
+}
+
+/* media query */
+@media only screen and (max-width: 991px){
+    .paralax__bg {
+        height: 450px;
+    }
+    .paralax__text .banner__title {
+        font-size: 35px;
+        margin: 15px 0;
+        color: #FFF;
+    }
+}
+@media only screen and (max-width: 767px){
+    .paralax__bg {
+        height: 400px;
+        background-position: center center;
+    }
+}
+@media only screen and (max-width: 425px){
+    .paralax__text .banner__title {
+        font-size: 28px;
+    }
+    .paralax__bg{
+        padding: 30px 20px;
+    }
+}

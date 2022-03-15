@@ -1,0 +1,216 @@
+/* ======================= shop page layouts ======================= */
+#shop{
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.filter__wrapper {
+    /* height: 100%; */
+    background: #FFF;
+    padding: 40px 40px;
+}
+.shop__product {
+    background: #FFF;
+    padding: 30px;
+}
+.filter__title{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #444;
+    font-weight: 700;
+    margin: 0px 0 20px 0;
+}
+/* ======================= input slider range ======================= */
+input#searchFilter.form-control {
+    height: 45px;
+    border-radius: 0;
+}
+
+
+/* ======================= input slider range ======================= */
+.filter__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-range__slider {
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    outline: none;
+    position: absolute;
+    top: -1px;
+    transition: left 200ms ease-out;
+    will-change: left;
+}
+.input-range__slider::before {
+    background: #ff4c3b;
+    border-radius: 100%;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    will-change: transform, box-shadow;
+    border: 2px solid #ff4c3b;
+}
+.input-range__slider:active::before {
+    transform: scale(1.15);
+}
+.input-range__slider:focus::before {
+    box-shadow: 0 0 0 5px #ff4c3b;
+}
+.input-range--disabled .input-range__slider::before {
+    background: #ccc;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    transform: none;
+}
+.input-range__label-container {
+    display: none;
+}
+.input-range__label-container .input-range__label--min, .input-range__label-container .input-range__label--max {
+    display: none;
+}
+/* _input-range-track.scss */
+.input-range__track {
+    background: #e6e9ea;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: left 200ms ease-out, width 200ms ease-out;
+    will-change: left, width;
+}
+.input-range--disabled .input-range__track {
+    background: #e6e9ea;
+}
+.input-range__track--background {
+    margin-top: -1.5px;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.input-range__track--active {
+    background: #ff4c3b;
+}
+.input-range {
+    height: 1rem;
+    position: relative;
+    width: 100%;
+}
+.filter__min--price,
+.filter__max--price{
+    color: #AAA;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.price__filter .input-range {
+    height: 1rem;
+    position: relative;
+    width: 96%;
+    margin-left: 5px;
+}
+.price__filter{
+    margin-top: 40px;
+}
+/* ======================= filter color button ======================= */
+.color__filter{
+    margin-top: 40px;
+}
+.color__filter--group {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+span.checked__style {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+}
+span.checked__style::after{
+    font-family: FontAwesome;
+	content: "\f00c";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .15s cubic-bezier(.4,0,.2,1) 0ms;
+    visibility: visible;
+    color: #ff4c3b;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+}
+.active__radio--color span.checked__style::after{
+    opacity: 1;
+    visibility: visible;
+}
+.checkbox__filter{
+    display: none;
+}
+
+label.active__radio--color.red span.checked__style::after {
+    color: #FFF;
+}
+
+
+/* ======================= brand filter ======================= */
+.brand__filter{
+    margin-top: 40px;
+}
+.brand__checked--style{
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    border: 2px solid #7d879c;
+    border-radius: 2px;
+    position: relative;
+    margin-right: 8px;
+}
+.brand__checked--style::after {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    background-color: transparent;
+    content: " ";
+    visibility: visible;
+    border-radius: 1px;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.active__brand--filter .brand__checked--style::after{
+    background-color: #0f3460;
+}
+.active__brand--filter .brand__checked--style{
+    border-color: #0f3460;
+}
+.brand__filter--checkbox{
+    display: none;
+    visibility: hidden;
+}
+.brand__filter--group label{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 13px;
+    color: #777;
+    font-weight: 500;
+    letter-spacing: .5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}

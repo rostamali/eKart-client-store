@@ -1,0 +1,138 @@
+[
+    {
+      "id": "10AB01",
+      "title": "trim dress",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/39.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/6.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/25.jpg"
+      ],
+      "colors": [
+        "yellow",
+        "white",
+        "pink"
+      ],
+      "brand": "nike",
+      "salePrice": 30,
+      "regularPrice": 40,
+      "preview": 0
+    },
+    {
+      "id": "10AB02",
+      "title": "belted dress",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/3.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/4.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/5.jpg"
+      ],
+      "colors": [
+        "olive",
+        "navy",
+        "red"
+      ],
+      "brand": "nike",
+      "salePrice": 50,
+      "regularPrice": 40,
+      "preview": 0
+    },
+    {
+      "id": "10AB03",
+      "title": "fitted dress",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/1.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/2.jpg"
+      ],
+      "colors": [
+        "white",
+        "black"
+      ],
+      "brand": "zara",
+      "salePrice": 60,
+      "regularPrice": 40,
+      "preview": 0
+    },
+    {
+      "id": "10AB04",
+      "title": "belted top",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/8.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/7.jpg"
+      ],
+      "colors": [
+        "white",
+        "skyblue"
+      ],
+      "brand": "denim",
+      "salePrice": 70,
+      "regularPrice": 40,
+      "preview": 0
+    },
+    {
+      "id": "10AB05",
+      "title": "belted top",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/9.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/10.jpg"
+      ],
+      "colors": [
+        "green",
+        "black"
+      ],
+      "brand": "denim",
+      "salePrice": 70,
+      "regularPrice": 40,
+      "preview": 0
+    },
+    {
+      "id": "10AB06",
+      "title": "belted top",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/11.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/12.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/22.jpg"
+      ],
+      "colors": [
+        "olive",
+        "gray",
+        "red"
+      ],
+      "brand": "zara",
+      "salePrice": 80,
+      "regularPrice": 40,
+      "preview": 0
+    },
+    {
+      "id": "10AB07",
+      "title": "belted top",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/13.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/8.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/15.jpg"
+      ],
+      "colors": [
+        "pink",
+        "white",
+        "black"
+      ],
+      "brand": "nike",
+      "salePrice": 90,
+      "regularPrice": 40,
+      "preview": 0
+    },
+    {
+      "id": "10AB08",
+      "title": "belted top",
+      "images": [
+        "https://multikart-react.vercel.app/assets/images/pro3/14.jpg",
+        "https://multikart-react.vercel.app/assets/images/pro3/16.jpg"
+      ],
+      "colors": [
+        "yellow",
+        "black"
+      ],
+      "brand": "zara",
+      "salePrice": 40,
+      "regularPrice": 40,
+      "preview": 0
+    }
+]

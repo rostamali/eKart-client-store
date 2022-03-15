@@ -1,0 +1,19 @@
+.payment__input--group input[type=radio]:checked + label> .brand__checked--style::after {
+    background-color: #ff4c3b;
+}
+.payment__input--group>input {
+    display: none;
+    visibility: hidden;
+}
+.payment__input--group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.payment__select {
+    margin-top: 70px;
+}
+.place__order--wrapper {
+    margin-top: 46px;
+    text-align: end;
+}

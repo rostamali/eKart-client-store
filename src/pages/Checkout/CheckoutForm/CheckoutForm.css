@@ -1,0 +1,38 @@
+.form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+.form__full{
+    margin-bottom: 20px;
+}
+#checkout__form .form-control{
+    height: 45px;
+    border-radius: 0;
+}
+#checkout__form label{
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#checkout__form #cart__total--table{
+    margin-top: 62px;
+}
+
+
+/* ========== media query ========== */
+@media only screen and (max-width: 991px){
+    .form__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+    #checkout__form #cart__total--table{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,40 @@
+.dashboard__menu--wrapper {
+    padding: 30px 50px;
+}
+.dashboard__logo{
+    height: 60px;
+}
+.dashboard__menu{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.dashboard__menu--link:link,
+.dashboard__menu--link:visited{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #878787;
+    margin-bottom: 15px;
+}
+a.dashboard__menu--link>svg {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.dashboard__menu--link.active {
+    color: #ff4c3b;
+}
+
+
+button.dashboard__logout--btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #878787;
+    margin-bottom: 15px;
+    font-weight: 500;
+}

@@ -1,0 +1,35 @@
+#dashboard{
+    height: 100vh;
+}
+#dashboard .row{
+    height: 100%;
+}
+.dashboard__container{
+    background-color: #F4F7FC;
+    height: 100%;
+    padding: 60px;
+}
+.dashboard__top--bar{
+    padding: 30px 50px;
+    text-align: end;
+}
+h5.user__name {
+    text-transform: capitalize;
+    margin-right: 30px;
+}
+.dashboard__top--bar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 450px){
+    .dashboard__container {
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .dashboard__container {
+        padding: 20px 15px;
+    }
+}

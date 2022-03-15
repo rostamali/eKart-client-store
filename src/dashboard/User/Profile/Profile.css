@@ -1,0 +1,57 @@
+.user__login {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+.user__name{
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.user__info{
+    margin-left: 20px;
+}
+.user__orderinfo {
+    background-color: #FFF;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.user__orderinfo--number{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff4c3b;
+}
+.user__orderinfo--text{
+    font-size: 12px;
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+.order__info--wrapper>.row{
+    height: 100%;
+}
+
+/* media query */
+@media only screen and (max-width: 992px){
+    .order__info--wrapper .col-lg-3.col-md-6.col-6{
+        margin-bottom: 10px;
+    }
+    .user__orderinfo{
+        padding: 20px 0;
+    }
+    .order__info--wrapper{
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .dashboard__sidebar {
+        margin-bottom: 20px;
+    }
+}

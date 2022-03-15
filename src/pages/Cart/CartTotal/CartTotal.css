@@ -1,0 +1,38 @@
+#cart__total--table thead th{
+    text-align: center;
+}
+#cart__total--table thead{
+    height: 60px;
+    background-color: #FFF;
+    vertical-align: middle;
+}
+#cart__total--table tbody tr {
+    height: 70px;
+    vertical-align: middle;
+}
+#cart__total--table tbody{
+    border-top: none;
+}
+#cart__total--table tbody th,
+#cart__total--table tbody td{
+    padding: 0 0 0 30px;
+}
+#cart__total--table tbody tr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+#cart__total--table tbody tr td,
+#cart__total--table tbody tr th{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#cart__total--table .table-bordered>:not(caption)>* {
+    border-width: 1px 0;
+    border-color: #ddd;
+}
+span.cart__total-total-price {
+    font-size: 22px;
+    font-weight: 500;
+}

@@ -1,0 +1,27 @@
+.order__list--product td {
+    vertical-align: middle;
+}
+.order__list--product thead {
+    background-color: #fff;
+    height: 55px;
+    vertical-align: middle;
+}
+.order__list--product.table-responsive tbody {
+    border-top: none;
+}
+
+/* media query */
+@media only screen and (max-width: 580px){
+    .order__list--product thead {
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px){
+    .order__list--product .order__list--details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .order__list--details td{
+        text-align: center;
+    }
+}

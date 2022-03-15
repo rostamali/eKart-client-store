@@ -1,0 +1,130 @@
+/* header top */
+.header__top{
+    background-color: #f8f8f8;
+    padding: 15px 0;
+}
+.header__top--text{
+    color: #999;
+    font-size: 14px;
+}
+.header__top--text svg{
+    margin-right: 3px;
+    color: #ff4c3b;
+}
+.header__top--text:last-child{
+    margin-left: 30px;
+}
+
+/* main header */
+.header__menu{
+    padding: 15px 0;
+}
+#header .row{
+    align-items: center;
+}
+img.brand__logo {
+    height: 60px;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nav__link:link,
+.nav__link:visited{
+    color: #2b3444;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 25px;
+    transition: all .3s;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.nav__link:hover,
+.nav__link:active{
+    color: #ff4c3b;
+}
+.logout__btn{
+    color: #2b3444;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 25px;
+    transition: all .3s;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    border: none;
+    background-color: transparent;
+}
+.logout__btn:hover{
+    color: #ff4c3b;
+}
+button.nav__btn {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    margin-left: 25px;
+
+    position: relative;
+}
+button.nav__btn:last-child svg{
+    font-size: 28px;
+}
+
+span.cart__count{
+    background: #ff4c3b;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -14px;
+    top: -3px;
+}
+
+
+/* ======= sticky header ======== */
+.header__menu.sticky__nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFF;
+    box-shadow: 0 0 8px #ddd;
+}
+
+.cart__mobile--btn{
+    display: none;
+}
+.nav__menu {
+    text-align: end;
+}
+/* media query */
+@media only screen and (max-width: 577px){
+    .header__nav--menu{
+        display: none;
+    }
+    .header__top {
+        display: none;
+    }
+    .header__menu.sticky__nav {
+        position: static;
+        box-shadow: 0 0 0 transparent;
+    }
+    a.brand__logo--wrapper {
+        display: block;
+        text-align: center;
+    }
+    .header__middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cart__mobile--btn{
+        display: block;
+    }
+}

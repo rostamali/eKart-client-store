@@ -33,10 +33,10 @@ const Footer = () => {
                                 <img src={brandLogo} alt="Brand logo" className="brand__logo" />
                                 <p className="text__muted mt-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                                 <div className="footer__social--menu">
-                                    <a className="footer__social--menu-link" href="/"><FaFacebookF /></a>
-                                    <a className="footer__social--menu-link" href="/"><FaGooglePlusG className='google__icon' /></a>
-                                    <a className="footer__social--menu-link" href="/"><FaTwitter /></a>
-                                    <a className="footer__social--menu-link" href="/"><FaInstagram /></a>
+                                    <a className="footer__social--menu-link" href="https://www.facebook.com/GoWithRostam/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
+                                    <a target="_blank" rel="noreferrer" className="footer__social--menu-link" href="mailto:rostamsardar446@gmail.com"><FaGooglePlusG className='google__icon' /></a>
+                                    <a target="_blank" className="footer__social--menu-link" href="/"><FaTwitter /></a>
+                                    <a target="_blank" className="footer__social--menu-link" href="/"><FaInstagram /></a>
                                     <a className="footer__social--menu-link" href="/"><FaRss /></a>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ const Footer = () => {
                                             <FaMapMarkerAlt/>
                                         </div>
                                         <div className="store__info--text">
-                                            Multikart Demo Store, Demo Store India 345-659
+                                            Court station, Horogram notun para, Rajshahi, Bangladesh
                                         </div>
                                     </div>
                                     <div className="store__info--items">
@@ -76,7 +76,7 @@ const Footer = () => {
                                             <FaPhoneAlt/>
                                         </div>
                                         <div className="store__info--text">
-                                            Call Us: 123-456-7898
+                                            Call Us: <a href="tel:01321070987">+880 132-1070-987</a>
                                         </div>
                                     </div>
                                     <div className="store__info--items">
@@ -84,7 +84,7 @@ const Footer = () => {
                                             <MdOutlineAlternateEmail/>
                                         </div>
                                         <div className="store__info--text">
-                                            Email Us: Support@Fiot.Com
+                                            Email Us: <a href="mailto:rostamsardar446@gmail.com">rostamsardar446@gmail.com</a>
                                         </div>
                                     </div>
                                 </div>

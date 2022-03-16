@@ -111,6 +111,12 @@ a.footer__social--menu-link svg:hover {
     font-size: 14px;
     font-weight: 400;
 }
+.store__info--text a:link,
+.store__info--text a:visited{
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 .footer__copyright {
     padding: 35px 0;

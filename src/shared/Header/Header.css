@@ -7,6 +7,11 @@
     color: #999;
     font-size: 14px;
 }
+.header__top--text a:link,
+.header__top--text a:visited{
+    color: #999;
+    font-size: 14px;
+}
 .header__top--text svg{
     margin-right: 3px;
     color: #ff4c3b;

@@ -36,8 +36,8 @@ const Header = () => {
             <div id="header">
                 <div className="header__top">
                     <div className="container">
-                        <span className="header__top--text"><FaPhoneAlt/> Call Us: 123 - 456 - 7890</span>
-                        <span className="header__top--text"><MdOutlineAlternateEmail/> Email Us: Support@Fiot.Com</span>
+                        <span className="header__top--text"><FaPhoneAlt/> Call Us: <a href="tel:01321070987">+880 132-1070-987</a></span>
+                        <span className="header__top--text"><MdOutlineAlternateEmail/> Email Us: <a href="mailto:rostamsardar446@gmail.com">rostamsardar446@gmail.com</a></span>
                     </div>
                 </div>
                 <div className={`header__menu ${stickyNav ? 'sticky__nav':''}`}>

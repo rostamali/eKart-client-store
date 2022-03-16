@@ -154,4 +154,8 @@ ul.rc-rate {
     .rc-rate .rc-rate-star{
         margin-right: 0px;
     }
+    #new__arrival .product__thumb--image img,
+    #shop .product__thumb--image img{
+        height: 30px;
+    }
 }
